@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+winston = require('winston');
+logging = new winston.Logger({
+  transports: [ new winston.transports.Console({
+    level: 'silly'
+  })]
+});
+
+var conf = require('./../conf/harvester.conf').config;
+conf.logging = logging;
+harvester = require('../lib/harvester.js');
+harvester = new harvester.LogHarvester(conf);
+harvester.run();
