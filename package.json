@@ -23,12 +23,13 @@
   ],
   "dependencies": {
     "backbone": "~0.9.10",
-    "underscore": "~1.4.3",
+    "express": "~3.0.1",
     "jquery": "~1.8.1",
     "jquery-browserify": "~1.8.1",
     "socket.io": "~0.9.13",
     "socket.io-client": "~0.9.11",
-    "express": "~3.0.1",
+    "underscore": "~1.4.3",
+    "watch": "^0.16.0",
     "winston": "~0.6.2"
   },
   "devDependencies": {

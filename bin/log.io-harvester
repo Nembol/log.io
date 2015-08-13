@@ -2,7 +2,7 @@
 winston = require('winston');
 logging = new winston.Logger({
   transports: [ new winston.transports.Console({
-    level: 'silly'
+    level: 'info'
   })]
 });
 
